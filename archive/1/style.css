@@ -1,0 +1,41 @@
+/* index.htmlのCSS */
+body {
+    background-color:#cbeafc;     /* 背景色 */
+    margin: 0;                      /* 余白をなくす */
+}
+
+h1 {
+    text-align: center;             /* 中央揃え */
+    font-size: 3em;                 /* フォントサイズ */
+    padding-top: 3%;                /* 上部の余白 */        
+}
+
+img {
+    width: 20%;                     /* 画像の幅 */
+    margin: 0 40%;                  /* 画像の左右の余白（上下は0なのでなし） */
+    border-radius: 50%;             /* 画像を丸くする */
+}
+
+div.float-left {
+    width: 60%;                     /* ブロックの幅 */
+    clear: both;                    /* フロート解除 */
+    margin:  0 20%;                 /* ブロックの左右の余白 */
+}
+
+div.float-left * {
+    width: 50%;                     /* ブロック内の要素の幅 */
+}
+
+div.float-left h2 {
+    display: block;                 /* ブロック要素 */
+    text-align: center;             /* 中央揃え */
+    font-size: 2em;                 /* フォントサイズ */
+    float: left;                    /* 左寄せ */
+}
+
+div.float-left p {
+    display: block;                 /* ブロック要素 */
+    text-align: center;             /* 中央揃え */
+    font-size: 1.5em;               /* フォントサイズ */
+    float: left;                    /* 左寄せ */
+}

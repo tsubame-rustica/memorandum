@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>インライン要素とブロック要素の違い</title>
+    </head>
+    <body>
+        <div class="inline"> <!-- インライン要素 -->
+            <span>box1</span>
+            <span>box2</span>
+            <span>box3</span>
+        </div>
+        <div class="block"> <!-- ブロック要素 -->
+            <div>box1</div>
+            <div>box2</div>
+            <div>box3</div>
+        </div>
+        <style>
+            body {
+                width: 100%;
+                display: flex;
+                gap: 10%;
+                justify-content: center;
+            }
+            .imline, .block {
+                width: 45%;
+            }
+            .inline span {
+                display: inline;    /* インライン要素 */
+                background-color: #9DCCF5;
+            }
+            .block div {
+                display: block;     /* ブロック要素 */
+                background-color: #F5E39D;
+            }
+        </style>
+    </body>
+</html>

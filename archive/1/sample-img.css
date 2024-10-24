@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+}
+
+div {
+    width: 40vw;
+    height: 40vw;
+    margin: 0 4%;
+    float: left;
+}
+
+div.img-tag img {
+    width: 100%;
+    object-fit: contain;
+}
+
+div.img-bg {;
+    background-image: url(./tsubame.png);
+    background-size: 100%;
+}
