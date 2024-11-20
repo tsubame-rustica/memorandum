@@ -4,7 +4,7 @@
         <h2 class="ce-header" contenteditable="false" data-placeholder="">1. Visual Studio Codeをインストールする</h2>
     </div>
     <div>
-        <div class="line">　まず初めに、Visual Studio Codeをインストールします。Visual Studio Codeはプログラミングをする際に便利なアプリケーションで、データパックを作るときにもとても便利です。
+        <div class="line">　まず初めに、Visual Studio Codeをインストールします。Visual Studio Codeはプログラミングをする際に便利なアプリケーションです。
             <span style="" id="generated-id-1695901121148-4w2ljsvtp"><a href="https://code.visualstudio.com/download" id="generated-id-1695901134945-goyrpxw9k">ここから</a>インストールしてください。</span>
         </div>
     </div>
