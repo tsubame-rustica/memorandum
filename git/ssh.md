@@ -83,12 +83,10 @@ https://git-scm.com/downloads
 6.  入力したら"Add SSH key"を押す
 
 #### Powershell(Windows)またはTerminal(Mac)
-1.  powershellの画面に戻って
+-   powershell(Terminal)の画面に戻って情報を登録する
     ```sh
     git config --global user.name "Your Name"
     ```
     ```sh
     git config --global user.email "you@example.com"
     ```
-
-3.  ```Hi (アカウント名)! You've successfully authenticated, but GitHub does not provide shell access.```が返ってくればSSh接続ができています。エラーが返ってきたときはどこかが間違っているということなのでもう一度正しいかどうか見直してみてください。
