@@ -34,7 +34,7 @@ https://git-scm.com/downloads
 
 5.  以下のコマンドを実行すると公開鍵の内容がクリップボードにコピーできる。
     ```sh
-    clip < ~/.ssh/id_ed25519.pub
+    Get-Content ~/.ssh/id_ed25519.pub | clip
     ```
 
 ### Macの場合
