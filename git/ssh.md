@@ -7,6 +7,8 @@ GitHub上とローカルでやり取りをするためには公開鍵の登録�
 gitのインストール   
 https://git-scm.com/downloads
 
+[インストール手順](https://qiita.com/T-H9703EnAc/items/4fbe6593d42f9a844b1c)
+
 ## 接続手順
 ### Windowsの場合
 #### Powershell側
