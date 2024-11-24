@@ -4,6 +4,9 @@ GitHub上とローカルでやり取りをするためには公開鍵の登録�
 
 ※githubアカウントは作成済みの前提
 
+gitのインストール   
+https://git-scm.com/downloads
+
 ## 接続手順
 ### Windowsの場合
 #### Powershell側
