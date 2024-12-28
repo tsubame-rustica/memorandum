@@ -3,26 +3,25 @@
 参考にした記事：https://qiita.com/kodai_0122/items/56168eaec28eb7b1b93b
 
 ## バージョン管理ツールのインストール
-1. パスを通す(bashの場合は`~/.bashrc`)
+1. `rbenv`をインストールする
+    ```sh
+    brew install rbenv ruby-build
+    ```
+2. パスを通す(bashの場合は`~/.bashrc`)
 
     ```sh
     echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
     ```
 
-2. `eval init -`コマンドの設定(bashの場合は`~/.bash_profile`)
+3. `eval init -`コマンドの設定(bashの場合は`~/.bash_profile`)
 
     ```sh
     echo 'eval "$(rbenv init -)"' >> ~/.zshrc
     ```
 
-3. 変更を反映する
+4. 変更を反映する
     ```sh
     source ~/.zshrc
-    ```
-
-4. `rbenv`をインストールする
-    ```sh
-    brew install rbenv ruby-build
     ```
 
 ## Rubyのインストール
@@ -85,7 +84,8 @@
 1. PostgreSQLをインストールする
     ```sh
     brew install postgresql
-
+    ```
+    
 2. PostgreSQLを起動する
     ```sh
     brew service start postgresql
@@ -147,3 +147,20 @@
     ```sh
     rails db:create
     ```
+
+## データベースの構築
+※ rakeコマンドはrailsコマンドに置き換え
+1. モデルとテーブルを作成
+    ```sh
+    rails g model Hoge[モデル名] name:varchar[カラム名]
+    ```
+
+2. 変更をDBに反映
+    ```sh
+    db:migrate
+    ```
+
+3. コントローラーを作成
+    ```sh
+    rails g controller Hoge[モデル名]
+    ``` 
