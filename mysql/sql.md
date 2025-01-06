@@ -16,12 +16,30 @@
     ```
 
 - ユーザーの権限を変更
-    - テーブル内の権限
+    - 権限の付与
         ```sql
-        GRANT select, update on db_name.*to 'ユーザー名'@'ホスト名';
+        GRANT select, update on 権限のレベル to 'ユーザー名'@'ホスト名';
         ```
+
+    - 権限の削除
+        ```sql
+        GRANT 権限 on 権限のレベル from 'ユーザー名'@'ホスト名';
+        ```
+    
+    - 権限のレベル
+        
+        - グローバルレベル - `*.*`
+        - データベースレベル - `db_name.*`
+        - テーブルレベル - `db_name.table_name`
+
 
 - 権限の確認
     ```sql
     SHOW grants FOR 'ユーザー名'@'ホスト名';
     ```
+
+## 別ユーザーに権限を付与するときの注意点
+- `SHOW DATABASES`でデータベースが見えない時(USE文が使えない時)
+```sql
+GRANT SHOW DATABASES, SELECT on *.* to 'ユーザー名'@'ホスト名';
+```
