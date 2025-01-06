@@ -28,6 +28,11 @@ USE データベース名;
 CREATE TABLE テーブル名 ( カラム名 型, ・・・ );
 ```
 
+### テーブル名の変更
+```sql
+ALTER TABLE 変更前のテーブル名 RENAME TO 変更後のテーブル名;
+```
+
 ### テーブルの構造を表示
 ```sql
 DESC テーブル名;
@@ -46,12 +51,17 @@ ALTER TABLE テーブル名 ADD カラム名 型;
 
     変更したいカラムに対して実行すると型を変更することができる
     ```sql
-    ALTER TABLE テーブル名 MODIFY カラム名 型
+    ALTER TABLE テーブル名 MODIFY カラム名 型;
     ```
 
 - **カラム名の変更**
 
     変更したいカラムに対して実行するとカラム名を変更することができる
     ```sql
-    ALTER TABLE テーブル名 CHANGE 変更前のカラム名 変更後のカラム名
+    ALTER TABLE テーブル名 CHANGE 変更前のカラム名 変更後のカラム名 型;
     ```
+
+### カラムの削除
+```sql
+ALTER TABLE テーブル名 DROP カラム名;
+```
