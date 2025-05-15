@@ -65,3 +65,25 @@ ALTER TABLE テーブル名 ADD カラム名 型;
 ```sql
 ALTER TABLE テーブル名 DROP カラム名;
 ```
+
+
+## テーブルの変更
+### データの挿入
+```sql
+INSERT INTO table_name (column_name1, column_name2) VALUES (value1, value2);
+```
+
+### データの削除
+```sql
+DELETE FROM table_name WHERE column_name = value;
+```
+
+### データの変更
+```sql
+UPDATE table_name SET 変更するカラム = 値 WHERE 対象のデータのカラム名 = 値;
+```
+
+### データの検索
+```sql
+SELECT * FROM table_name;
+```
