@@ -56,7 +56,7 @@
 
 11. 無事にリモートでマージが行われたらリモートからpullする
     ```sh
-    git pull origin main
+    git pull origin develop
     ```
 
 12. 別の機能を実装する時には4〜12を繰り返す
