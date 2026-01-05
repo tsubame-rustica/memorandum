@@ -87,3 +87,8 @@ UPDATE table_name SET 変更するカラム = 値 WHERE 対象のデータのカ
 ```sql
 SELECT * FROM table_name;
 ```
+
+### 外部キーの追加
+```sql
+ALTER TABLE orders ADD CONSTRAINT fk_customer FOREIGN KEY (customer_id) REFERENCES customers(id);
+```

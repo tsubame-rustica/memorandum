@@ -10,9 +10,17 @@
     SELECT Host, User FROM mysql.user;
     ```
 
+- ユーザー名の変更
+    ```sql
+    RENAME USER old_user TO new_user;
+    ```
+
 - ユーザーのパスワード変更
     ```sql
     SET PASSWORD FOR 'ユーザー名'@'ホスト名' = 'パスワード';
+    ```
+    ```sql
+    ALTER USER 'root'@'localhost' IDENTIFIED BY 'xxxxx';
     ```
 
 - ユーザーの権限を変更
@@ -26,6 +34,16 @@
         REVOKE 権限 on 権限のレベル to 'ユーザー名'@'ホスト名';
         ```
     
+
+    - 操作の種類　
+        - select
+        - update
+        - insert
+        - delete
+        - create
+        - drop
+        - all privileges
+
     - 権限のレベル
         
         - グローバルレベル - `*.*`
