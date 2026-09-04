@@ -1,2 +1,0 @@
-# Tellwind CSS
-
